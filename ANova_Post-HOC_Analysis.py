@@ -9,7 +9,6 @@ For each replicate:
     delta = end - start
 
 CSV files must be named as prefix_rep{number}.csv
-Requires: pandas, numpy, scipy, statsmodels
 """
 
 import pandas as pd
