@@ -5,9 +5,6 @@ distances between molecules (6 Angstrom COM cutoff).
 
 Usage:
     python sta_com_analysis.py --tpr md_ramp.tpr --xtc md_ramp_center.xtc --out_dir results
-
-Output:
-    results/sta_percent_selfassoc.csv
 """
 
 import numpy as np
