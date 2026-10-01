@@ -8,12 +8,10 @@ For each run:
     start = mean of first 5 frames
     end   = mean of plateau (last 80% of trajectory)
     delta = end - start
+    
     SE_end   = std(plateau) / sqrt(N_eff)
     SE_start = std(first 5 frames) / sqrt(5)
     SE_delta = sqrt(SE_end^2 + SE_start^2)
-
-Usage:
-    python delta_selfassoc_neff.py
 """
 
 import numpy as np
