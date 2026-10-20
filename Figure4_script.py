@@ -76,13 +76,13 @@ ax.set_xticks(x)
 ax.set_xticklabels(labels, fontsize=11)
 ax.set_xlabel('Final Configurations', fontsize=11)
 ax.set_ylabel('% Self-Associating Stearic Acid (plateau mean)', fontsize=11)
-ax.set_title('Path Independence Test', fontsize=14, fontweight='bold')
+ax.set_title('Path Independence Test by Conditions', fontsize=14, fontweight='bold')
 ax.set_ylim(0, 85)
 
 ax.legend(handles=[
     Patch(facecolor=red, edgecolor='black', label='373K, 25Bar'),
     Patch(facecolor=blue, edgecolor='black', label='300K, 1Bar'),
-], title='Starting Configurations by Conditions', fontsize=10, title_fontsize=10, loc='upper right')
+], title='Starting Configurations', fontsize=10, title_fontsize=10, loc='upper right')
 
 plt.tight_layout()
 plt.savefig('pathIndependenceTest.png', dpi=150)
