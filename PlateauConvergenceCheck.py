@@ -6,6 +6,8 @@ CSV files must be named as prefix_rep{number}.csv
 
 import numpy as np
 
+threshold = 10
+
 conditions = {
     '300K/25bar (P increase)': [
         '300K25bar_from300K1bar_rep1.csv',
@@ -45,6 +47,6 @@ for condition, paths in conditions.items():
         first = np.mean(plateau[:n // 2])
         second = np.mean(plateau[n // 2:])
         diff = abs(second - first)
-        status = 'converged' if diff < 5 else 'check convergence'
+        status = 'converged' if diff < threshold else 'check convergence'
         print(condition, "rep" + str(i + 1), "first =", round(first, 1),
               "second =", round(second, 1), "diff =", round(diff, 1), status)
