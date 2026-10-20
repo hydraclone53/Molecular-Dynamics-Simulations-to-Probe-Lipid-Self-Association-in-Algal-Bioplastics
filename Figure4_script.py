@@ -82,7 +82,7 @@ ax.set_ylim(0, 85)
 ax.legend(handles=[
     Patch(facecolor=red, edgecolor='black', label='373K, 25Bar'),
     Patch(facecolor=blue, edgecolor='black', label='300K, 1Bar'),
-], title='Starting Configurations', fontsize=10, title_fontsize=10, loc='upper right')
+], title='Starting Configurations by Conditions', fontsize=10, title_fontsize=10, loc='upper right')
 
 plt.tight_layout()
 plt.savefig('pathIndependenceTest.png', dpi=150)
